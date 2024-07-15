@@ -95,22 +95,59 @@
 
         <div class="row gy-4">
           <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <style>
+              
+              .card {
+                  max-width: 400px;
+                  margin: 50px auto;
+                  padding: 20px;
+                  border-radius: 8px;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                  text-align: center;
+                  
+                  background-color: #f9f9f9;
+              }
+              .upload-btn {
+                  margin-top: 20px;
+                  padding: 10px 20px;
+                  background-color: #007bff;
+                  color: white;
+                  border: none;
+                  border-radius: 5px;
+                  cursor: pointer;
+              }
+              .upload-btn:hover {
+                  background-color: #0056b3;
+              }
+              input[type="file"] {
+                  display: none;
+              }
+              .upload-label {
+                  display: inline-block;
+                  background-color: #007bff;
+                  color: white;
+                  padding: 10px 20px;
+                  border-radius: 5px;
+                  cursor: pointer;
+              }
+              .upload-label:hover {
+                  background-color: #0056b3;
+              }
+          </style>
+          <div class="card">
+            <h2>Upload Your File</h2>
+            <form id="uploadForm">
+                <label for="fileInput" class="upload-label">Choose File</label>
+                <input type="file" id="fileInput" name="file" />
+                <button type="submit" class="upload-btn">Upload</button>
+            </form>
+        </div>
           </div>
           <div class="col-lg-6 order-2 order-lg-1 content">
-            <h3>Voluptatem dignissimos provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
-            </ul>
+            <h3>UPLOAD FILE</h3>
+           
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              *LESS than 5mb.
             </p>
           </div>
         </div>
